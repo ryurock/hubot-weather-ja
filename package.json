@@ -1,0 +1,30 @@
+{
+  "name": "hubot-weather-ja",
+  "version": "0.0.0",
+  "description": "hubot scripts weather information from weather.livedoor.com",
+  "main": "./scripts/weather-ja.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryurock/hubot-weather-ja.git"
+  },
+  "keywords": [
+    "hubot",
+    "weather",
+    "hubot-scripts"
+  ],
+  "author": "Ryusuke Kimura",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "1a64a16fbd8e3037e20e52a5aef1d60b84c1f4da",
+  "bugs": {
+    "url": "https://github.com/ryurock/hubot-weather-ja/issues"
+  },
+  "dependencies": {
+    "xml2json": "~0.4.0",
+    "async": "~0.7.0",
+    "date-utils": "~1.2.15"
+  }
+}
