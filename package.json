@@ -1,6 +1,6 @@
 {
   "name": "hubot-weather-ja",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "hubot scripts weather information from weather.livedoor.com",
   "main": "./scripts/weather-ja.coffee",
   "scripts": {
