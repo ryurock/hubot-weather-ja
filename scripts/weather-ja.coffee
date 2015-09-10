@@ -8,7 +8,6 @@
 # Author:
 #   ryurock
 
-parser = require('xml2json')
 async = require('async')
 require('date-utils')
 
