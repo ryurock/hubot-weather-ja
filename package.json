@@ -23,7 +23,7 @@
     "url": "https://github.com/ryurock/hubot-weather-ja/issues"
   },
   "dependencies": {
-    "async": "~0.7.0",
+    "async": "^1.4.2",
     "dateformat": "^1.0.11"
   }
 }
