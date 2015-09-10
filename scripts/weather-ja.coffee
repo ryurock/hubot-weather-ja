@@ -8,9 +8,8 @@
 # Author:
 #   ryurock
 
-parser = require('xml2json')
 async = require('async')
-require('date-utils')
+dateFormat = require('dateformat')
 
 weathearList = require('../config/weather_area_list.json')
 
@@ -46,7 +45,7 @@ module.exports = (robot) ->
       throw new Error('err catched.') if err
       forecastTime = new Date(result.publicTime)
       text = "【お天気情報 #{place}】\n" +
-      "■  #{forecastTime.toFormat("YYYY年MM月DD日HH24時MI分")}の予報です\n" +
+      "■  #{dateFormat(forecastTime, "yyyy年mm月dd日HH時MM分")}の予報です\n" +
       "予報 : #{result.forecasts[0].telop}\n" +
       "#{result.description.text}\n" +
       "詳しい情報は下記を参照\n\n" +
