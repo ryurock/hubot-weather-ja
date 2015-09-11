@@ -8,14 +8,24 @@
 # Author:
 #   ryurock
 
+arrify = require('arrify')
 dateFormat = require('dateformat')
 
-weathearList = require('../config/weather_area_list.json')
+weathearAreaList = require('../config/weather_area_list.json')
 
 module.exports = (robot) ->
   robot.respond /天気\s*(.*)?$/i, (msg) ->
-    place  = '東京'
-    place  = msg.match[1] if msg.match[1]?
+    place = msg.match[1] or '東京'
+    city = null
+    weathearAreaList.some (area) ->
+      arrify(area.city).some (data) ->
+        if data.title == place
+          city = data
+        return false
+    
+    unless city
+      msg.send "#{place}の天気は見つかりません"
+      return
 
     # livedoor 天気予報APIのバグ arealistのIDが5桁のものは0パディングしないといけない
     cityId = "0#{city.id}".slice(-6)
