@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "hubot scripts weather information from weather.livedoor.com",
   "main": "./scripts/weather-ja.coffee",
+  "files": [
+    "config",
+    "scripts"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
