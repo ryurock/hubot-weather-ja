@@ -10,22 +10,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ryurock/hubot-weather-ja.git"
-  },
+  "repository": "ryurock/hubot-weather-ja",
   "keywords": [
     "hubot",
     "weather",
     "hubot-scripts"
   ],
   "author": "Ryusuke Kimura",
-  "license": "BSD",
-  "readmeFilename": "README.md",
-  "gitHead": "1a64a16fbd8e3037e20e52a5aef1d60b84c1f4da",
-  "bugs": {
-    "url": "https://github.com/ryurock/hubot-weather-ja/issues"
-  },
+  "license": "BSD-3-Clause",
   "dependencies": {
     "arrify": "^1.0.0",
     "dateformat": "^1.0.11"
